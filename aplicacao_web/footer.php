@@ -14,17 +14,17 @@
 			<span class="tit-footer"><b>Links</b></span><br>
 			<ul>
 				<li>
-					<a href="index.php">
+					<a href="index">
 						Home
 					</a>
 				</li>
 				<li>
-					<a href="contato.php">
+					<a href="contato">
 						Contato
 					</a>
 				</li>
 				<li>
-					<a href="servico.php">
+					<a href="servico">
 						Serviço
 					</a>
 				</li>

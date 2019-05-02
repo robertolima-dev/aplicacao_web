@@ -24,7 +24,7 @@
 		<nav class="navbar navbar-expand-md navbar-light navbar-transparente">
 			<div class="container">
 				<!-- logo -->
-				<a href="index.php" class="navbar-brand">
+				<a href="index" class="navbar-brand">
 					<span class="text-light">NOME DO SITE</span>
 				</a>
 				
@@ -39,19 +39,19 @@
 
 						<div class="item-menu">
 							<li class="nav-item">
-								<a href="index.php" class="nav-link text-light">Home</a>
+								<a href="index" class="nav-link text-light">Home</a>
 							</li>
 						</div>
 						
 						<div class="item-menu">
 							<li class="nav-item">
-								<a href="servico.php" class="nav-link text-light">Serviço</a>
+								<a href="servico" class="nav-link text-light">Serviço</a>
 							</li>
 						</div>
 
 						<div class="item-menu">
 							<li class="nav-item">
-								<a href="contato.php" class="nav-link text-light">Contato</a>
+								<a href="contato" class="nav-link text-light">Contato</a>
 							</li>
 						</div>
 
