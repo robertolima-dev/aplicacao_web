@@ -4,3 +4,4 @@ Aplicação Web em PHP
 
 Commit v1.0.0 - header / index / servicos / contato
 
+Commit v1.0.1 - footer + add footer nas páginas

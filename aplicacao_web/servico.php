@@ -5,3 +5,5 @@
 	<h1>SERVICO</h1>
 
 </div>
+
+<?php include 'footer.php'; ?>

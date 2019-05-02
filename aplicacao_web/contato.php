@@ -5,3 +5,5 @@
 	<h1>CONTATO</h1>
 
 </div>
+
+<?php include 'footer.php'; ?>
