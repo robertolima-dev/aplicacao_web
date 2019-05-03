@@ -1,7 +1,1 @@
-<?php 
-
-echo 'cheguei aqui';
-
-echo '<pre>';
-print_r($_POST);
-echo '</pre>';
+<?php include '../../../aplicacao_web_Off/validar/cadastro.php'; ?>
