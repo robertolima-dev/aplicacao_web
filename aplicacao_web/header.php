@@ -55,6 +55,24 @@
 							</li>
 						</div>
 
+						<div class="item-menu">
+							<li class="nav-item text-light mt-2 ml-2 mr-2">
+								|
+							</li>
+						</div>
+
+						<div class="item-menu">
+							<li class="nav-item">
+								<a href="cadastro" class="nav-link text-light">Cadastro</a>
+							</li>
+						</div>
+
+						<div class="item-menu">
+							<li class="nav-item">
+								<a href="login" class="nav-link text-light">Login</a>
+							</li>
+						</div>
+
 
 					</ul>
 				</div>
