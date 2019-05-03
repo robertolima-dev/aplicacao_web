@@ -14,4 +14,6 @@ Commit v1.0.4 - form pagina cadastro - action=process/validar/cadastro / method=
 
 Commit v1.0.5 - aplicacao_web_Off que será publicada fora do public_html / conexao PDO (obs - iniciar um database com nome apliacao_web) / action do cadastro direcionado para aplicacao_web_Off
 
+Commit v1.0.6 - cadastro efetuado com sucesso / abrir uma tabela chamada tb_cadastro (sql incluso no projeto) 
+
 
