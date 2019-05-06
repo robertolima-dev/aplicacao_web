@@ -16,4 +16,5 @@ Commit v1.0.5 - aplicacao_web_Off que será publicada fora do public_html / cone
 
 Commit v1.0.6 - cadastro efetuado com sucesso / abrir uma tabela chamada tb_cadastro (sql incluso no projeto) 
 
+Commit v1.0.7 - logica de validacao do cadastro implementada / session_start() / validador (validar sessao) / redirecionamento para app/dashboard - print de $_SESSION
 

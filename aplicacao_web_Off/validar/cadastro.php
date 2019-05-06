@@ -10,6 +10,8 @@ $_POST['senha'];
 $_POST['status'];
 $data = date('Y-m-d H:i:s');
 
+$autenticado = false;
+
 include '../../../aplicacao_web_Off/conexao.php';
 
 $query="
@@ -33,7 +35,45 @@ $stmt->execute();
 $error = $stmt->errorInfo();
 
 if($error[0] == 0) {
-	echo 'deu certo!';
+
+	$autenticado = true;
+	
+	$query_id="
+	SELECT 
+	*
+	FROM 
+	tb_cadastro
+	ORDER BY id_usuario DESC LIMIT 1
+	";
+
+	$stmt = $conexao->query($query_id);
+	$usuario = $stmt->FetchAll(PDO::FETCH_ASSOC);
+
+	//print_r($usuario);
+	//echo '<br />';
+
+	$id_usuario = $usuario[0]['id_usuario'];
+	$status_usuario = $usuario[0]['status'];
+
+	//print_r($id_usuario);
+	//echo '<br />';
+
+	if($autenticado == true) {
+		$_SESSION['autenticado'] = 'SIM';
+		$_SESSION['id'] = $id_usuario;
+		$_SESSION['status'] = $status_usuario;
+
+		/*
+		echo '<pre>';
+		print_r($_SESSION);
+		echo '</pre>';
+		*/
+
+		header('location: ../../app/dashboard?cadastro=seucesso');
+
+	} else {
+		header('location: ../../cadastro?cadastro=erro');
+	}
 } else {
-	echo 'houve um erro!';
+	header('location: ../../cadastro?cadastro=erro');
 }
