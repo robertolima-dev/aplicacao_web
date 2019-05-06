@@ -3,15 +3,11 @@
 include '../../aplicacao_web_Off/validador.php';
 include 'header.php';
 
-echo '<pre>';
-print_r($_SESSION);
-echo '</pre>';
-
 ?>
 
 <body>
 	<div class="container">
-		<h1>Dashboard</h1>
+		<h1>Produtos</h1>
 	</div>
 </body>
 
