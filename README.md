@@ -18,3 +18,4 @@ Commit v1.0.6 - cadastro efetuado com sucesso / abrir uma tabela chamada tb_cada
 
 Commit v1.0.7 - logica de validacao do cadastro implementada / session_start() / validador (validar sessao) / redirecionamento para app/dashboard - print de $_SESSION
 
+Commit v1.0.8 - logica de validacao de login implementada / redirecionamento para app/dashboard - print de $_SESSION
