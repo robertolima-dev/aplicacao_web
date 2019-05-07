@@ -28,6 +28,7 @@
 							</div>
 
 							<input type="hidden" name="status" value="1">
+							<input type="hidden" name="perfil" value="2">
 
 							<div>
 								<button class="btn btn-success btn-block mt-3">Cadastrar-se</button>

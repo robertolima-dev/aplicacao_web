@@ -26,4 +26,5 @@ Commit v1.1.1 - lógica de logout implementado / alerts de cadastro login e erro
 
 Commit v1.1.2 - Formulario de contato conectado ao banco de dados / tb_contato em sql 
 
+Commit v1.1.3 - add perfil ao cadastro / class User() -> OOP programacao orientada a objeto
 

@@ -8,6 +8,7 @@ $_POST['nome'];
 $_POST['email'];
 $_POST['senha'];
 $_POST['status'];
+$_POST['perfil'];
 $data = date('Y-m-d H:i:s');
 
 $autenticado = false;
@@ -17,9 +18,9 @@ include '../../../aplicacao_web_Off/conexao.php';
 $query="
 INSERT INTO 
 tb_cadastro
-(nome, email, senha, status, data) 
+(nome, email, senha, status, data, perfil) 
 VALUES 
-(:nome, :email, :senha, :status, :data)
+(:nome, :email, :senha, :status, :data, :perfil)
 ";
 
 $stmt = $conexao->prepare($query);
@@ -28,6 +29,7 @@ $stmt->bindValue(':nome', $_POST['nome'], PDO::PARAM_STR);
 $stmt->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
 $stmt->bindValue(':senha', md5($_POST['senha']), PDO::PARAM_STR);
 $stmt->bindValue(':status', $_POST['status'], PDO::PARAM_INT);
+$stmt->bindValue(':perfil', $_POST['perfil'], PDO::PARAM_INT);
 $stmt->bindValue(':data', $data, PDO::PARAM_STR);
 
 $stmt->execute();
