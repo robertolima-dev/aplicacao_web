@@ -23,3 +23,7 @@ Commit v1.0.8 - logica de validacao de login implementada / redirecionamento par
 Commit v1.1.0 - paginas dasboard / produtos / clientes / vendas e sair do app /header e footer do app
 
 Commit v1.1.1 - lógica de logout implementado / alerts de cadastro login e erro de login
+
+Commit v1.1.2 - Formulario de contato conectado ao banco de dados / tb_contato em sql 
+
+
