@@ -20,7 +20,7 @@
 <body>
 
 	<!-- inicio header -->
-	<header class="mb-5 bg-dark">
+	<header class="bg-dark">
 		<nav class="navbar navbar-expand-md navbar-light navbar-transparente">
 			<div class="container">
 				<!-- logo -->

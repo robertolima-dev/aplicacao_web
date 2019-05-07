@@ -28,3 +28,5 @@ Commit v1.1.2 - Formulario de contato conectado ao banco de dados / tb_contato e
 
 Commit v1.1.3 - add perfil ao cadastro / class User() -> OOP programacao orientada a objeto
 
+Commit v1.1.3 - correcao na class User() / index com cara de site utilizando html5/css3/bootstrap4
+

@@ -27,12 +27,14 @@ class User
 $user = new User();
 
 foreach($usuarios as $usuario) {
+	if($usuario['id_usuario'] == $_SESSION['id']) {
 
-	$user->__set('id_usuario', $usuario['id_usuario']);
-	$user->__set('nome', $usuario['nome']);
-	$user->__set('email', $usuario['email']);
-	$user->__set('status', $usuario['status']);
-	$user->__set('perfil', $usuario['perfil']);
-	$user->__set('data', $usuario['data']);
+		$user->__set('id_usuario', $usuario['id_usuario']);
+		$user->__set('nome', $usuario['nome']);
+		$user->__set('email', $usuario['email']);
+		$user->__set('status', $usuario['status']);
+		$user->__set('perfil', $usuario['perfil']);
+		$user->__set('data', $usuario['data']);
 
+	}
 }

@@ -13,44 +13,40 @@ echo '</pre>';
 
 ?>
 
-<?php if($user->id_usuario == $_SESSION['id']) { ?>
+<head>
+	<script type="text/javascript">
+		function hiddenAlert1() {
+			document.getElementById('alert1').style.display = "none";
+		}
+		function hiddenAlert2() {
+			document.getElementById('alert2').style.display = "none";
+		}
+	</script>
+</head>
 
-	<head>
-		<script type="text/javascript">
-			function hiddenAlert1() {
-				document.getElementById('alert1').style.display = "none";
-			}
-			function hiddenAlert2() {
-				document.getElementById('alert2').style.display = "none";
-			}
-		</script>
-	</head>
+<body>
+	<div class="container">
 
-	<body>
-		<div class="container">
-
-			<?php if(isset($_GET['cadastro']) && $_GET['cadastro'] == 'sucesso') { ?>
-				<div id="alert1">
-					<span onclick="hiddenAlert1()">x</span>
-					<div class="alert alert-success text-center">
-						Cadastro Efetuado com Sucesso!
-					</div>
+		<?php if(isset($_GET['cadastro']) && $_GET['cadastro'] == 'sucesso') { ?>
+			<div id="alert1">
+				<span onclick="hiddenAlert1()">x</span>
+				<div class="alert alert-success text-center">
+					Cadastro Efetuado com Sucesso!
 				</div>
-			<?php } ?>
+			</div>
+		<?php } ?>
 
-			<?php if(isset($_GET['login']) && $_GET['login'] == 'sucesso') { ?>
-				<div id="alert2">
-					<span onclick="hiddenAlert2()">x</span>
-					<div class="alert alert-success text-center">
-						Login Efetuado com Sucesso!
-					</div>
+		<?php if(isset($_GET['login']) && $_GET['login'] == 'sucesso') { ?>
+			<div id="alert2">
+				<span onclick="hiddenAlert2()">x</span>
+				<div class="alert alert-success text-center">
+					Login Efetuado com Sucesso!
 				</div>
-			<?php } ?>
+			</div>
+		<?php } ?>
 
-			<h1>Dashboard - Seja bem vindo <?php echo $user->nome ?></h1>
-		</div>
-	</body>
-
-<?php } ?>
+		<h1>Dashboard - Seja bem vindo <?php echo $user->nome ?></h1>
+	</div>
+</body>
 
 <?php include 'footer.php'; ?>
