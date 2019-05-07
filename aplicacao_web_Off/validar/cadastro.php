@@ -69,7 +69,7 @@ if($error[0] == 0) {
 		echo '</pre>';
 		*/
 
-		header('location: ../../app/dashboard?cadastro=seucesso');
+		header('location: ../../app/dashboard?cadastro=sucesso');
 
 	} else {
 		header('location: ../../cadastro?cadastro=erro');

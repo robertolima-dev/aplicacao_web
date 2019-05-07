@@ -69,7 +69,7 @@
 
 						<div class="item-menu">
 							<li class="nav-item">
-								<a href="logout" class="nav-link text-light">Sair</a>
+								<a href="../process/validar/logout" class="nav-link text-light">Sair</a>
 							</li>
 						</div>
 
